@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "Photo MetaInfo Vite",
+  "action": { "default_popup": "index.html" },
+  "permissions": ["scripting"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "icons": {
+    "128": "./icons/globe_location/worldwide-location-128.png",
+    "256": "./icons/globe_location/worldwide-location-256.png"
+  }
+}
