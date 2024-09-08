@@ -1,42 +1,35 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* styles.css (or wherever you're handling the extension's CSS) */
+
+/* Make the entire background of the extension transparent */
+body {
+  background-color: transparent !important;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Ensure the main container of your extension has no background color */
+#chrome-extension-root {
+  background-color: transparent;
+  padding: 10px; /* Optional: adjust as needed */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style for text - white text with thin dark gray borders */
+.text-element {
+  color: white; /* White text */
+  border: 1px solid rgba(50, 50, 50, 0.3); /* Thin dark gray border */
+  padding: 5px; /* Optional: adjust as needed */
+  border-radius: 4px; /* Optional: to make borders slightly rounded */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* If you have buttons, style them similarly */
+button {
+  color: white;
+  background-color: transparent;
+  border: 1px solid rgba(50, 50, 50, 0.3); /* Dark gray border */
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+/* Optional: Hover effect for buttons */
+button:hover {
+  background-color: rgba(50, 50, 50, 0.2); /* Slight darkening on hover */
 }
